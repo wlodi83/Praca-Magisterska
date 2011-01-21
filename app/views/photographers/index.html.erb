@@ -1,0 +1,20 @@
+<h1>Lista Fotografów</h1>
+
+<table>
+  <tr>
+    <th>Imię i nazwisko Fotografa</th>
+  </tr>
+
+<% @photographers.each do |photographer| %>
+  <tr>
+    <td><%=h photographer.name %></td>
+    <td><%= link_to 'Pokaż', photographer %></td>
+    <td><%= link_to 'Edytuj', edit_photographer_path(photographer) %></td>
+    <td><%= link_to 'Usuń', photographer, :confirm => 'Czy napewno chcesz usunąć tego Fotografa?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Dodaj nowego Fotografa', new_photographer_path %>

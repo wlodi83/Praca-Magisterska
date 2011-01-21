@@ -1,0 +1,12 @@
+<% semantic_form_for @role do |form| %>
+
+    <% form.inputs :name => "Stwórz nowe uprawnienie" do %>
+      <%= form.input :name, :label => "Nazwa uprawnienia" %>
+    <% end %>
+
+    <% form.buttons do %>
+      <%= form.commit_button :label => "Zapisz" %>
+    <% end %>
+
+<%  end %>
+<%= link_to 'Lista uprawnień', roles_path %>

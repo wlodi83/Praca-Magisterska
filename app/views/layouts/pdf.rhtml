@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//PL"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<link rel="shortcut icon" href="http://example.com/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="http://example.com/favicon.ico" type="image/vnd.microsoft.icon">
+<%= stylesheet_link_tag 'blueprint/screen', 'blueprint/print', 'blueprint/ie', 'swf_upload' %>
+</head>
+<body>
+<div class="container">
+	<div class="column span-23 border">
+	<%= yield -%>
+	</div>
+</div>
+
+</body>
+</html>

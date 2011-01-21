@@ -1,0 +1,18 @@
+<h4 class="prepend-5">Lista Artykułów</h4>
+<table>
+  <tr>
+    <th>Tytuł</th><th>Opcje</th>
+  </tr>
+  <% @articles.each do |article| %>
+  <tr class="<%= cycle('odd','even') -%>">
+    <td><%= article.title %></td>
+    <td><%= link_to 'Pokaż', article %></td>
+    <td><%= link_to 'Upload zdjęć', new_article_photo_url(:article_id => article) %></td>
+    <td><%= link_to 'Edytuj', edit_article_path(article) %></td>
+    <td><%= link_to 'Usuń', article, :confirm => 'Czy napewno chcesz usunąć ten artykuł?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'Dodaj nowy artykuł', new_article_path %>

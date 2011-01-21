@@ -1,0 +1,15 @@
+<tr class="<%= cycle('odd','even') -%>">
+    <td><%= user.login -%></td>
+    <td><%= user.email -%></td>
+    <td><% if user.active? -%>
+        [AKTYWNY]   [<%= link_to "WYŁĄCZ", suspend_user_path(user), :method => :put%>]
+        <% elsif user.pending?-%>
+        [BRAK AKTYWACJI KONTA]
+        <% elsif user.suspended? -%>
+        [KONTO WYŁĄCZONE]   [<%= link_to "WŁĄCZ", unsuspend_user_path(user), :method => :put%>]
+        <% elsif user.deleted? -%>
+        [KONTO USUNIĘTE]
+        <% end -%>
+    </td>
+    <td>[<%= link_to 'UPRAWNIENIA', edit_user_url(user) %>]</td>
+</tr>

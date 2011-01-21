@@ -1,0 +1,20 @@
+<%= @article.title %>
+<%= @article.synopsis %>
+<%= @article.body %>
+<%= link_to 'Dokument PDF', article_path(@article, :format => :pdf) %>
+<h2>Komentarze</h2>
+<% for comment in @article.comments %>
+<strong>Nick: <%= comment.nick %></strong> <br />
+<strong>Tytuł: <%= comment.title %></strong> <br />
+<%= comment.comment %><br/>
+<% end %>
+<% form_tag :action => "comment", :id => @article do |comment| %>
+<%= error_messages_for :comments %>
+<p><label for="comment_nick">Nick:</label><br/>
+<%= text_field :comment, :nick %></p>
+<p><label for="comment_title">Tytuł:</label><br/>
+<%= text_field :comment, :title %></p>
+<p><label for="comment_comment">Treść:</label><br/>
+<%= text_area :comment, :comment %></p>
+<%= submit_tag "Dodaj komentarz" %>
+<% end %>

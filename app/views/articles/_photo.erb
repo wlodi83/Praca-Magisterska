@@ -1,0 +1,5 @@
+<div class="photo">
+	<%= link_to image_tag(photo.file.url(:thumb), :class => 'thumb'), photo.file.url %>
+        <%= link_to image_tag(photo.file.url(:preview), :class => 'preview'), photo.file.url %>
+        <%= link_to "Usuń", article_photo_url(@article, photo), :confirm => 'Czy napewno chcesz usunąć to zdjęcie?', :method => :delete %>
+</div>

@@ -1,0 +1,3 @@
+page.hide('search_form')
+page.hide('link_to_remote')
+page.insert_html :after, 'search_form', :partial => 'advanced_search_form'

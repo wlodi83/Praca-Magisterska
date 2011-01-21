@@ -1,0 +1,14 @@
+<pre>
+<% semantic_form_for @author do |form| %>
+      <% form.inputs :name => "Dodaj nowego Autora tekstów" do %>
+      <%= form.label(:imię_i_nazwisko_autora, :name, :required => true) %>
+      <%= form.input :name, :label => false, :hint => "Na przykład \"Jan Kowalski\"" %>
+      <% end %>
+
+     <% form.buttons do %>
+      <%= form.commit_button :label => "Zapisz" %>
+    <% end %>
+<% end %>
+</pre>
+
+<%= link_to 'Powrót', authors_path %>

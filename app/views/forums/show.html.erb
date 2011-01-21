@@ -1,0 +1,19 @@
+<% title @forum.name  %>
+
+<table>
+  <tr>
+    <th width="60%">Tytuł tematu</th>
+    <th width="10%">Odpowiedzi</th>
+    <th width="30%">Ostatni post</th>
+  </tr>
+  <% for topic in @forum.topics %>
+    <tr>
+      <td><%= link_to h(topic.name), topic_path(topic.id) %></td>
+      <td><%= topic.posts.count-1 %></td>
+      <td class="right"><%= distance_of_time_in_words_to_now topic.last_post_at %> temu przez <%= link_to topic.user.login, "/users/#{topic.last_poster_id}" %></td>
+      <% if logged_in? and current_user.has_role? :administrator -%><td><%= link_to "Usuń", topic, :confirm => 'Czy napewno chcesz usunąć ten temat?', :method => :delete %></td><% end %>
+    </tr>
+  <% end %>
+</table>
+
+<% if logged_in? %><p><%= link_to "Nowy temat", "/topics/new?forum=#{@forum.id}" %></p><% end %>

@@ -1,0 +1,7 @@
+<h1>Lista zdjęć</h1>
+<div id="images">
+	<%= render :partial => 'photo', :collection => @photos %>
+</div>
+<br class="clearer" />
+<br />
+<h3><%= link_to 'Upload zdjęcia', new_photo_path %></h3>

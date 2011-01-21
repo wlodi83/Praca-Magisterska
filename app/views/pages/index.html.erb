@@ -1,0 +1,33 @@
+<h2>Strony Systemu Zarządzania Treścią</h2>
+<% if current_user.has_role? :administrator %>
+<p><%= link_to 'Dodaj nową stronę', new_page_url %></p>
+<ul>
+  <% @pages.each do |page| %>
+ <li>
+    <%= link_to page.permalink, page_path(page) %>
+    [<%= link_to 'edytuj', edit_page_path(page) %>
+    |<%= link_to 'usuń', page_url(page), :method => :delete,
+		  :confirm => 'Czy napewno chcesz usunąć tę stronę?' %>]
+    : <%= page.title %>
+</li>
+<% end -%>
+</ul>
+<% elsif current_user.has_role? :edytor %>
+<p><%= link_to 'Dodaj nową stronę', new_page_url %></p>
+<ul>
+  <% @pages.each do |page| %>
+ <li>
+    <%= link_to page.permalink, page_path(page) %> : <%= page.title %>
+ </li>
+<% end -%>
+</ul>
+<% elsif current_user.has_role? :moderator %>
+<ul>
+  <% @pages.each do |page| %>
+ <li>
+    <%= link_to page.permalink, page_path(page) %>
+    [<%= link_to 'edytuj', edit_page_path(page) %>] : <%= page.title %>
+</li>
+<% end -%>
+</ul>
+<% end %>

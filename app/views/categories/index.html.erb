@@ -1,0 +1,17 @@
+<h1>Lista Kategorii</h1>
+
+<table>
+  <tr>
+    <th>Nazwa</th>
+    <th>Opis</th>
+    <th>Ukryta?</th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= category.name %></td>
+    <td><%= category.description %></td>
+    <td><%= category.hidden %></td>
+   </tr>
+<% end %>
+</table>

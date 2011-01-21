@@ -1,0 +1,9 @@
+<h2>Użytkownik: <%= @user.login %></h2>
+<p>Data rejestracji: <%= @user.created_at %></p>
+
+<div id="topics">
+  <strong>Tematy:</strong><br />
+  <% @user.topics.each do |topic| %>
+    <%= link_to topic.name, topic_url(topic.forum.id) %><br />
+  <% end %>
+</div>

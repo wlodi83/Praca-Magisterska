@@ -1,0 +1,12 @@
+<% form_for @topic do |f| %>
+  <%= f.error_messages %>
+  <% if params[:forum] %><input type="hidden" id="topic_forum_id" name="topic[forum_id]" value="<%= params[:forum] %>" /><% end %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <textarea name="post[content]" cols="80" rows="20"><%= @post.content %></textarea>
+  </p>
+  <p><%= f.submit "Potwierdź" %></p>
+<% end %> 

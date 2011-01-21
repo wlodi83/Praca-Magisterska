@@ -1,0 +1,9 @@
+<div id="search_form">
+<% form_tag searches_path, :method => :get do %>
+	  <fieldset>
+	    <%= text_field_tag :q, h(params[:q]), :maxlength => 50 %>
+	    <%= submit_tag "Szukaj" %>
+	  </fieldset>
+<% end %>
+</div>
+<%= link_to_remote "Wyszukiwanie zaawansowane", :url => {:controller => :searches, :action => :add_advanced_search_form}, :html => {:id => 'link_to_remote'} %>

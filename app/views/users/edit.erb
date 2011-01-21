@@ -1,0 +1,6 @@
+<% semantic_form_for @user do |form| %>
+  <% form.inputs do -%>
+    <%= form.input :roles, :as => :check_boxes, :label => "Role użytkownika" %>
+    <%= form.commit_button "Zapisz" %>
+  <% end -%>
+<% end %>

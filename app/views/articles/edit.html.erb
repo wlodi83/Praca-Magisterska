@@ -1,0 +1,27 @@
+<h1>Edycja artykułu</h1>
+<pre>
+  <% semantic_form_for(@article, :html => {:multipart => true}) do |form| %>
+
+    <% form.inputs :name => "Treść i kategoria artykułu" do %>
+      <%= form.input :title, :label => "Tytuł" %>
+      <%= form.label(:wstęp_do_artykułu, :synopsis, :required => true) %>
+      <%= form.tinymce_managed :synopsis %>
+      <%= form.label(:treść_artykułu, :body, :required => true) %>
+      <%= form.tinymce_managed :body %>
+      <%= form.input :published, :label => "Publikować?", :as => :radio %>
+      <%= form.input :categories, :label => "Kategoria", :as => :check_boxes, :collection => nested_set_options(Category, @category) {|i| "#{'-' * i.level} #{i.name}" }, :for => :categories %>
+    <% end %>
+
+    <% form.inputs :name => "Autorzy i Fotografowie Artykułów" do %>
+      <%= form.input :authors, :label => "Autorzy", :as => :check_boxes, :collection => Author.all %>
+      <%= form.input :photographers, :label => "Fotografowie", :as => :check_boxes, :collection => Photographer.all %>
+    <% end %>
+
+    <%= render :partial => 'photo', :collection => @article_photos %>
+
+    <% form.buttons do %>
+      <%= form.commit_button :label => "Zapisz" %>
+    <% end %>
+
+  <% end %>
+</pre>

@@ -1,0 +1,7 @@
+lib/rtex/framework/rails.rb 4d88932d21c4e766251c9b9f1d88373b60da0510
+lib/rtex/tempdir.rb 653635ed812005e5d45ec7de70380c773bb8314d
+lib/rtex.rb 924d59799819e6c14907ee5a4afe6386d38f583d
+lib/rtex/framework/merb.rb 3be0797d47480ecaa4f270160cdd063c3d5ef988
+lib/rtex/version.rb f532aa1480b027e239b38ff937d5b998512d3199
+lib/rtex/escaping.rb eeabfebb51d1408d269ef201d995ed7bf834573b
+lib/rtex/document.rb 3cfd84abd8c0cd4a763a8baa755ee991302cfa8b

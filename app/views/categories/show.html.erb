@@ -1,0 +1,16 @@
+<p>
+  <b>Nazwa kategorii:</b>
+  <%= @category.name %>
+</p>
+
+<p>
+  <b>Opis kategorii:</b>
+  <%= @category.description %>
+</p>
+
+<p>
+  <b>Ukryta?</b>
+  <%= @category.hidden %>
+</p>
+
+<%= link_to 'Powrót', categories_path %>

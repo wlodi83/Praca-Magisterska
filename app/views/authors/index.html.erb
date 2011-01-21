@@ -1,0 +1,20 @@
+<h1>Autorzy tekstów</h1>
+
+<table>
+  <tr>
+    <th>Imię i nazwisko</th>
+  </tr>
+
+<% @authors.each do |author| %>
+  <tr>
+    <td><%=h author.name %></td>
+    <td><%= link_to 'Pokaż', author %></td>
+    <td><%= link_to 'Edytuj', edit_author_path(author) %></td>
+    <td><%= link_to 'Usuń', author, :confirm => 'Czy napewn chcesz usunąć autora tekstów?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Dodaj nowego autora tekstów', new_author_path %>

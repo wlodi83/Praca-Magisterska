@@ -1,0 +1,9 @@
+<h2>Dodaj nową stronę</h2>
+
+<%= error_messages_for :page %>
+
+<% form_for :page, :url => pages_url, :html => { :method => :post } do |f| -%>
+<p>Tytuł:<br /><%= f.text_field :title, :size => 60 %></p>
+<p>Treść:<br /><%= f.tinymce_managed :body, :rows => 20, :cols => 60 %></p>
+<%= submit_tag 'Zapisz' %> lub <%= link_to 'anuluj', pages_url %>
+<% end -%>

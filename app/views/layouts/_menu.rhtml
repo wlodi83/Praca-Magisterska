@@ -1,0 +1,29 @@
+<% if logged_in? and current_user.has_role? :administrator -%>
+<h5 class="caps">Menu:</h5>
+<%= link_to 'Artykuły', articles_path, :class => "quiet" %><br />
+<%= link_to 'Kategorie', categories_path, :class => "quiet" %><br /><br />
+<%= link_to "Forum",  forums_path, :class => "quiet" %>
+<h5 class="caps">Administracja:</h5>
+<%= link_to 'Strony', pages_path, :class => "quiet" %>
+<%= link_to 'Użytkownicy', users_path, :class => "quiet" %><br />
+<%= link_to 'Uprawnienia', new_role_path, :class => "quiet" %><br />
+<%= link_to 'Artykuły', admin_articles_path, :class => "quiet" %><br />
+<%= link_to 'Autorzy', authors_path, :class => "quiet" %><br />
+<%= link_to 'Fotografowie', photographers_path, :class => "quiet" %><br />
+<%= link_to 'Kategorie', admin_categories_path, :class => "quiet" %><br />
+<%= link_to 'Zdjęcia', photos_path, :class => "quiet" %><br />
+<%= link_to 'Komentarze', comments_path, :class => "quiet" %><br />
+<%= link_to "Forum",  forums_path %>
+<% elsif logged_in? and (current_user.has_role? :edytor or current_user.has_role? :moderator) %>
+<h5 class="caps">Administracja:</h5>
+<%= link_to 'Edycja Stron', pages_path, :class => "quiet" %><br />
+<%= link_to 'Artykuły', articles_path, :class => "quiet" %><br />
+<%= link_to 'Administracja Artykułami', admin_articles_path, :class => "quiet" %><br />
+<%= link_to 'Kategorie', categories_path, :class => "quiet" %><br />
+<%= link_to 'Zdjęcia', photos_path, :class => "quiet" %><br />
+<%= link_to "Forum",  forums_path %>
+<% else %>
+<%= link_to 'Artykuły', articles_path, :class => "quiet" %><br />
+<%= link_to 'Kategorie', categories_path, :class => "quiet" %><br />
+<%= link_to "Forum",  forums_path %>
+<% end %>

@@ -1,0 +1,15 @@
+<% semantic_form_for @user do |form| %>
+    <% @user.password = @user.password_confirmation = nil %>
+    <% form.inputs :name => "Uzupełnij poniższe dane potrzebne do rejestracji konta" do %>
+      <%= form.semantic_errors :user %>
+      <%= form.input :login, :label => "Login użytkownika", :input_html => { :size => 60 } %>
+      <%= form.input :email, :label => "Adres e-mail", :input_html => { :size => 60 } %>
+      <%= form.input :password, :label => "Hasło" %>
+      <%= form.input :password_confirmation, :label => "Potwierdzenie hasła" %>
+    <% end %>
+
+    <% form.buttons do %>
+      <%= form.commit_button :label => "Zapisz" %>
+    <% end %>
+
+<%  end %>

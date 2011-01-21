@@ -1,0 +1,16 @@
+<h1>Lista artykułów</h1>
+
+<table>
+  <tr>
+    <th>Tytuł</th>
+    <th>Wstęp</th>
+    </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.synopsis %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @articles, :previous_label => "«Poprzednia", :next_label => "Następna»"  %>

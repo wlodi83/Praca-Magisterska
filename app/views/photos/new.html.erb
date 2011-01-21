@@ -1,0 +1,22 @@
+<h1>Upload plików</h1>
+<%= error_messages_for :photo %>
+<% form_for [@article, @photo], :method => :post, :html => { :multipart => true } do |f| %>
+	<fieldset>
+		<div class="message">
+			Tylko pliki formatu jpg.
+		</div>
+		<ol>
+			<li>
+				<label for="photo_file">Opis zdjęcia</label>
+				<%= f.text_field :description %>
+			</li>
+                        <li>
+				<label for="photo_file">Plik</label>
+				<%= f.file_field :file %>
+			</li>
+		</ol>
+	</fieldset>
+	<div class="buttons">
+		<%= f.submit 'Prześlij', :class => 'button upload' %>
+	</div>
+<% end %>

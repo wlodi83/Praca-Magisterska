@@ -1,0 +1,8 @@
+<p>
+  <b>Imię i nazwisko autora tekstów:</b>
+  <%= @author.name %>
+</p>
+
+
+<%= link_to 'Edytuj', edit_author_path(@author) %> |
+<%= link_to 'Powrót', authors_path %>

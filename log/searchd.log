@@ -1,0 +1,105 @@
+[Tue Sep  7 21:40:05.951 2010] [12677] accepting connections
+[Tue Sep  7 21:40:24.466 2010] [12677] caught SIGTERM, shutting down
+[Tue Sep  7 21:40:24.466 2010] [12677] shutdown complete
+[Tue Sep  7 22:26:17.987 2010] [12802] accepting connections
+[Tue Sep  7 22:54:18.576 2010] [12802] rotating indices (seamless=1)
+[Tue Sep  7 22:54:18.578 2010] [12802] rotating index 'article_core': success
+[Tue Sep  7 22:54:18.578 2010] [12802] rotating finished
+[Tue Sep  7 22:54:29.566 2010] [12802] caught SIGTERM, shutting down
+[Tue Sep  7 22:54:29.566 2010] [12802] shutdown complete
+[Tue Sep  7 22:54:29.573 2010] [13107] accepting connections
+[Tue Sep  7 22:57:32.670 2010] [13107] caught SIGTERM, shutting down
+[Tue Sep  7 22:57:32.670 2010] [13107] shutdown complete
+[Tue Sep  7 23:11:24.330 2010] [13923] accepting connections
+[Tue Sep  7 23:13:24.938 2010] [13923] caught SIGTERM, shutting down
+[Tue Sep  7 23:13:24.939 2010] [13923] shutdown complete
+[Thu Sep  9 13:48:51.720 2010] [ 2460] accepting connections
+[Thu Sep  9 14:13:08.589 2010] [ 2460] rotating indices (seamless=1)
+[Thu Sep  9 14:13:08.592 2010] [ 2460] rotating index 'article_core': success
+[Thu Sep  9 14:13:08.593 2010] [ 2460] rotating finished
+[Thu Sep  9 14:20:04.618 2010] [ 2460] caught SIGTERM, shutting down
+[Thu Sep  9 14:20:04.618 2010] [ 2460] shutdown complete
+[Thu Sep  9 14:36:51.690 2010] [ 2413] accepting connections
+[Thu Sep  9 15:33:50.391 2010] [ 2413] rotating indices (seamless=1)
+[Thu Sep  9 15:33:50.408 2010] [ 2413] rotating index 'article_core': success
+[Thu Sep  9 15:33:50.408 2010] [ 2413] rotating finished
+[Thu Sep  9 15:34:57.920 2010] [ 2413] rotating indices (seamless=1)
+[Thu Sep  9 15:34:57.924 2010] [ 2413] rotating index 'article_core': success
+[Thu Sep  9 15:34:57.924 2010] [ 2413] rotating finished
+[Thu Sep  9 15:58:51.328 2010] [ 2413] rotating indices (seamless=1)
+[Thu Sep  9 15:58:51.330 2010] [ 2413] rotating index 'article_core': success
+[Thu Sep  9 15:58:51.330 2010] [ 2413] rotating finished
+[Thu Sep  9 16:33:34.611 2010] [ 2413] caught SIGTERM, shutting down
+[Thu Sep  9 16:33:34.611 2010] [ 2413] shutdown complete
+[Fri Sep 10 13:59:47.989 2010] [ 2370] accepting connections
+[Fri Sep 10 14:03:00.022 2010] [ 2370] rotating indices (seamless=1)
+[Fri Sep 10 14:03:00.023 2010] [ 2370] rotating index 'article_core': success
+[Fri Sep 10 14:03:00.023 2010] [ 2370] rotating finished
+[Fri Sep 10 15:25:08.154 2010] [ 2370] caught SIGTERM, shutting down
+[Fri Sep 10 15:25:08.154 2010] [ 2370] shutdown complete
+[Mon Sep 13 13:04:28.249 2010] [ 2433] accepting connections
+[Mon Sep 13 13:24:26.911 2010] [ 2433] caught SIGTERM, shutting down
+[Mon Sep 13 13:24:26.911 2010] [ 2433] shutdown complete
+[Mon Sep 13 13:28:43.406 2010] [ 2459] accepting connections
+[Mon Sep 13 15:55:25.742 2010] [ 2459] caught SIGTERM, shutting down
+[Mon Sep 13 15:55:25.743 2010] [ 2459] shutdown complete
+[Mon Sep 13 15:55:43.925 2010] [ 4573] accepting connections
+[Mon Sep 13 16:01:00.953 2010] [ 4573] rotating indices (seamless=1)
+[Mon Sep 13 16:01:00.964 2010] [ 4573] rotating index 'article_core': success
+[Mon Sep 13 16:01:00.964 2010] [ 4573] rotating finished
+[Mon Sep 13 16:01:34.712 2010] [ 4573] caught SIGTERM, shutting down
+[Mon Sep 13 16:01:34.712 2010] [ 4573] shutdown complete
+[Mon Sep 13 16:02:14.342 2010] [ 4725] accepting connections
+[Mon Sep 13 16:04:37.029 2010] [ 4725] rotating indices (seamless=1)
+[Mon Sep 13 16:04:37.030 2010] [ 4725] rotating index 'article_core': success
+[Mon Sep 13 16:04:37.031 2010] [ 4725] rotating finished
+[Mon Sep 13 16:05:50.364 2010] [ 4725] caught SIGTERM, shutting down
+[Mon Sep 13 16:05:50.364 2010] [ 4725] shutdown complete
+[Mon Sep 13 20:48:32.119 2010] [ 2437] accepting connections
+[Mon Sep 13 20:48:46.604 2010] [ 2437] rotating indices (seamless=1)
+[Mon Sep 13 20:48:46.606 2010] [ 2437] rotating index 'article_core': success
+[Mon Sep 13 20:48:46.606 2010] [ 2437] rotating finished
+[Mon Sep 13 20:51:59.885 2010] [ 2437] caught SIGTERM, shutting down
+[Mon Sep 13 20:51:59.885 2010] [ 2437] shutdown complete
+[Mon Sep 13 20:52:00.146 2010] [ 2581] accepting connections
+[Mon Sep 13 20:52:19.079 2010] [ 2581] caught SIGTERM, shutting down
+[Mon Sep 13 20:52:19.079 2010] [ 2581] shutdown complete
+[Mon Sep 13 20:53:28.327 2010] [ 2641] accepting connections
+[Mon Sep 13 20:54:50.101 2010] [ 2641] caught SIGTERM, shutting down
+[Mon Sep 13 20:54:50.101 2010] [ 2641] shutdown complete
+[Mon Sep 13 20:54:50.360 2010] [ 2756] accepting connections
+[Mon Sep 13 21:16:34.737 2010] [ 2756] caught SIGTERM, shutting down
+[Mon Sep 13 21:16:34.737 2010] [ 2756] shutdown complete
+[Mon Sep 13 21:16:34.995 2010] [ 3079] accepting connections
+[Mon Sep 13 21:26:44.262 2010] [ 3079] caught SIGTERM, shutting down
+[Mon Sep 13 21:26:44.263 2010] [ 3079] shutdown complete
+[Mon Sep 13 21:26:44.520 2010] [ 3308] accepting connections
+[Mon Sep 13 23:44:45.721 2010] [ 3308] caught SIGTERM, shutting down
+[Mon Sep 13 23:44:45.721 2010] [ 3308] shutdown complete
+[Tue Sep 14 13:24:42.986 2010] [ 2987] accepting connections
+[Tue Sep 14 17:37:11.952 2010] [ 2987] caught SIGTERM, shutting down
+[Tue Sep 14 17:37:11.952 2010] [ 2987] shutdown complete
+[Tue Sep 14 21:19:14.104 2010] [ 2433] accepting connections
+[Tue Sep 14 23:34:54.686 2010] [ 2433] caught SIGTERM, shutting down
+[Tue Sep 14 23:34:54.686 2010] [ 2433] shutdown complete
+[Thu Sep 16 22:58:03.263 2010] [ 2939] accepting connections
+[Fri Sep 17 00:18:59.991 2010] [ 2939] caught SIGTERM, shutting down
+[Fri Sep 17 00:18:59.992 2010] [ 2939] shutdown complete
+[Mon Sep 20 17:56:07.127 2010] [ 2586] accepting connections
+[Mon Sep 20 17:57:53.248 2010] [ 2586] caught SIGTERM, shutting down
+[Mon Sep 20 17:57:53.249 2010] [ 2586] shutdown complete
+[Mon Sep 20 17:58:13.661 2010] [ 2649] accepting connections
+[Mon Sep 20 18:28:56.249 2010] [ 2649] caught SIGTERM, shutting down
+[Mon Sep 20 18:28:56.263 2010] [ 2649] shutdown complete
+[Mon Sep 20 18:35:39.547 2010] [ 2892] accepting connections
+[Mon Sep 20 18:53:39.671 2010] [ 2892] caught SIGTERM, shutting down
+[Mon Sep 20 18:53:39.671 2010] [ 2892] shutdown complete
+[Mon Sep 20 18:55:03.508 2010] [ 3314] accepting connections
+[Mon Sep 20 23:00:35.098 2010] [ 3314] caught SIGTERM, shutting down
+[Mon Sep 20 23:00:35.099 2010] [ 3314] shutdown complete
+[Thu Sep 23 21:44:08.361 2010] [ 2319] accepting connections
+[Thu Sep 23 21:44:45.760 2010] [ 2319] rotating indices (seamless=1)
+[Thu Sep 23 21:44:45.782 2010] [ 2319] rotating index 'article_core': success
+[Thu Sep 23 21:44:45.782 2010] [ 2319] rotating finished
+[Thu Sep 23 23:13:27.919 2010] [ 2319] caught SIGTERM, shutting down
+[Thu Sep 23 23:13:27.920 2010] [ 2319] shutdown complete

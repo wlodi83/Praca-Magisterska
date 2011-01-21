@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= h(yield(:title) || "Untitled") %></title>
+    <%= stylesheet_link_tag 'forum' %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="header">
+    <h1>Forum Gazety Myszkowskiej</h1>
+    <%= link_to image_tag "logo.png" %><br /><br />
+    <% if logged_in? %>
+        Zalogowany jako <%= current_user.login %>!
+        <%= link_to "Wyloguj się", logout_path %>
+    <% else %>
+        <%= link_to "Rejestracja", signup_path %> or
+        <%= link_to "Zaloguj się", login_path %>.
+    <% end %>
+</div>  
+    <div id="container">
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+
+      <%- if show_title? -%>
+        <h1><%=h yield(:title) %></h1>
+      <%- end -%>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>

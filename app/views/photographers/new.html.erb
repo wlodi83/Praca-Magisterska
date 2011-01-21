@@ -1,0 +1,14 @@
+<pre>
+<% semantic_form_for @photographer do |form| %>
+      <% form.inputs :name => "Dodaj nowego Fotografa" do %>
+      <%= form.label(:imię_i_nazwisko_fotografa, :name, :required => true) %>
+      <%= form.input :name, :label => false, :hint => "Na przykład \"Jan Kowalski\"" %>
+      <% end %>
+
+     <% form.buttons do %>
+      <%= form.commit_button :label => "Zapisz" %>
+    <% end %>
+<% end %>
+</pre>
+
+<%= link_to 'Powrót', photographers_path %>

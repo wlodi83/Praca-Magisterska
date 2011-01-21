@@ -1,0 +1,21 @@
+<% semantic_form_for(@article, :html => {:multipart => true}) do |f| %>
+
+    <% f.inputs :name => "Treść i kategoria artykułu" do %>
+      <%= f.input :title, :label => "Tytuł" %>
+      <%= f.label(:wstęp_do_artykułu, :synopsis, :required => true) %>
+      <%= f.tinymce_managed :synopsis, :width => '600px', :height => '200px' %>
+      <%= f.label(:treść_artykułu, :body, :required => true) %>
+      <%= f.tinymce_managed :body, :width => '600px', :height => '400px' %>
+      <%= f.input :published, :label => "Publikować?", :as => :radio %>
+      <%= f.input :categories, :label => "Kategoria", :as => :check_boxes, :collection => nested_set_options(Category, @category) {|i| "#{'-' * i.level} #{i.name}" } %>
+    <% end %>
+    
+    <% f.inputs :name => "Autorzy i Fotografowie Artykułów" do %>
+      <%= f.input :authors, :label => "Autorzy", :as => :check_boxes, :collection => Author.all %>
+      <%= f.input :photographers, :label => "Fotografowie", :as => :check_boxes, :collection => Photographer.all %>
+    <% end %>
+
+    <% f.buttons do %>
+      <%= f.commit_button :label => "Zapisz" %>
+    <% end %>
+  <% end %>

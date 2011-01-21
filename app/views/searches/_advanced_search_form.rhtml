@@ -1,0 +1,37 @@
+<div id="search_form_advanced">
+  <% form_tag searches_path, :method => :get do %>
+	  
+	    <%= text_field_tag :q, h(params[:q]), :maxlength => 50 %><br />
+            <fieldset>
+              <legend>Wg Autorów</legend>
+                  <% @authors.each do |author| %>
+                    <%= check_box_tag 'author_ids[]', author.id -%>
+                    <%= h author.name -%><br />
+                  <% end %>
+            </fieldset>
+            <fieldset>
+              <legend>Wg Fotografów</legend>
+                  <% @photographers.each do |photographer| %>
+                    <%= check_box_tag 'photographer_ids[]', photographer.id -%>
+                    <%= h photographer.name -%><br />
+                  <% end %>
+            </fieldset>
+             <fieldset>
+              <legend>Wg Kategorii</legend>
+                  <% for category in Category.roots %>
+                    <%= check_box_tag 'category_ids[]', category.id -%>
+                    <%= h category.name -%><br />
+                    <% for children in category.children %>
+                    <%= check_box_tag 'category_ids[]', children.id -%>
+                    <%= h children.name -%><br />
+                    <% for subchild in children.children %>
+                    <%= check_box_tag 'category_ids[]', subchild.id -%>
+                    <%= h subchild.name -%><br />
+                    <% end %>
+                    <% end %>
+                  <% end %>
+            </fieldset>
+              
+              <%= submit_tag "Szukaj" %>
+<% end %>
+</div>
