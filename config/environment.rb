@@ -44,7 +44,7 @@ ActionMailer::Base.smtp_settings = {
   :address => 'wlodi.megiteam.pl',
   :port => 25,
   :user_name => 'lwlodarczyk@gazetamyszkowska.pl',
-  :password => 'deftones',
+  :password => '',
   :domain => 'gazetamyszkowska.pl',
   :authentication => :login
 }
